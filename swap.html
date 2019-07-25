@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>swap</title>
+  </head>
+  <body>
+    <div class="content" style="text-align:center;margin-top: 10em">
+      <h1 id="text1">Impossible</h1>
+      <button onclick="swap()">click</button>
+      <h1 id="text2">Possible</h1>
+    </div>
+    <script>
+      function swap() {
+        var temp = document.getElementById("text1").innerHTML;
+        document.getElementById("text1").innerHTML = document.getElementById(
+          "text2"
+        ).innerHTML;
+        document.getElementById("text2").innerHTML = temp;
+      }
+    </script>
+  </body>
+</html>

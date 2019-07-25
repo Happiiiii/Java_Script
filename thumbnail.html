@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tumbline</title>
+    <style>
+        img {
+            width: 20%;
+            height: 20%;
+            float: left;
+            margin-left: 8%;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="row1">
+        <img id="0" src="img/c1.jpg" style="height: 50%;width: 80%;"/>
+        <img id="1" src="img/c2.jpg" onclick="preview(this)" />
+        <img id="2" src="img/c3.jpg" onclick="preview(this)" />
+        <img id="3" src="img/c4.jpg" onclick="preview(this)" />
+    </div>
+    <script>
+        var setImage;
+        function preview(img) {
+            document.getElementById(0).src = img.src;
+        }
+        </script>
+</body>
+</html>

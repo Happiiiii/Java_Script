@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>onclickpicture</title>
+</head>
+<body>
+    <img src="img/c1.jpg" id="currentImage"  onclick="changeImage()" style="width: 100%;height:100%"/>
+    <script>
+    var myImage=document.getElementById("currentImage");
+    var imageArray=["img/c1.jpg","img/c2.jpg","img/c3.jpg","img/c4.jpg"];
+    var imageIndex = 1 ;
+    function changeImage(){
+        myImage.setAttribute("src", imageArray[imageIndex]);
+        imageIndex++;
+        if(imageIndex > 3){ imageIndex = 0 ;}
+}
+    </script>
+   </body>
+</html>
